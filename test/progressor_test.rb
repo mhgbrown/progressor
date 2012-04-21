@@ -2,7 +2,8 @@ $:.unshift(File.dirname(__FILE__) + '/../lib')
 
 require 'stringio'
 require 'test/unit'
-require 'each_with_progress'
+require 'progressor'
+require 'enumerable'
 
 class EachWithProgressTest < Test::Unit::TestCase
   def setup
