@@ -5,7 +5,7 @@ module Enumerable
       :processing_label => {:text => "Processing"},
       :completion_label => {:text => "Processing complete"},
       :spinner => {:elements => ["|", "/", "-", "\\"]},
-      :progress_bar => {:start => "[", :end => "]", :fill => "="},
+      :progress_bar => {:start => "[", :end => "]", :fill => "=", :length => 20},
       :elements_count => {:include_number => false},
       :percentage => {:precision => 0},
       :ellipsis => {:animate => false},
