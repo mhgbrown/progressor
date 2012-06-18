@@ -1,7 +1,7 @@
 module Enumerable
 
   def each_with_progress(options={}, &block)
-    progress_manager = Progressor.new(options)
+    progress_manager = Progressor.new(options.merge(:size => self.length))
 
     each_with_index do |*args|
       block.call(*args)
